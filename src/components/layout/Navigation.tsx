@@ -12,7 +12,9 @@ export function Header() {
         <div className="hidden md:flex items-center gap-8">
           <Link to="/" className="text-primary font-bold font-headline tracking-tight text-sm">Vault</Link>
           <Link to="/intake" className="text-secondary font-headline tracking-tight text-sm hover:bg-surface-container-high transition-colors px-3 py-1 rounded">Analyze</Link>
-          <Link to="/processing" className="text-secondary font-headline tracking-tight text-sm hover:bg-surface-container-high transition-colors px-3 py-1 rounded">Impact</Link>
+          <Link to="/recommendation" className="text-secondary font-headline tracking-tight text-sm hover:bg-surface-container-high transition-colors px-3 py-1 rounded">Recommendation</Link>
+          {/* <Link to="/processing" className="text-secondary font-headline tracking-tight text-sm hover:bg-surface-container-high transition-colors px-3 py-1 rounded">Impact</Link> */}
+
         </div>
         <div className="flex items-center gap-4">
           {/* <button className="hidden md:block px-6 py-2 bg-gradient-to-br from-primary to-primary-container text-white text-sm font-semibold rounded-xl active:scale-95 duration-200">
