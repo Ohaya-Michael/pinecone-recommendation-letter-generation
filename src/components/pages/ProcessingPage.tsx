@@ -70,10 +70,10 @@ export function ProcessingPage() {
             </motion.div>
           </div>
           <h1 className="font-headline text-3xl md:text-4xl font-extrabold text-primary tracking-tight mb-3">
-            Synchronizing with Private Wealth Servers
+            Generating Your Email Recommendations. 
           </h1>
           <p className="text-secondary font-body text-sm max-w-md mx-auto">
-            Aggregating global market shifts and personal portfolio vectors to generate your Sovereign Intelligence Feed.
+            Analyzing customer profile and behavior to generate personalized email suggestions. This may take a moment as we synthesize insights from your data.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export function ProcessingPage() {
         <div className="space-y-6">
           {/* Percentage Indicator */}
           <div className="flex justify-between items-end px-1">
-            <span className="font-label text-[11px] uppercase tracking-[0.05em] font-semibold text-primary">Intelligence Synthesis</span>
+            <span className="font-label text-[11px] uppercase tracking-[0.05em] font-semibold text-primary">RECOMMENDATION SYNTHESIS</span>
             <span className="font-headline text-lg font-bold text-on-tertiary-container">{progress}%</span>
           </div>
           {/* Progress Bar */}
@@ -98,22 +98,22 @@ export function ProcessingPage() {
             <div className="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/15 flex flex-col items-start gap-3">
               <ShieldCheck className="w-5 h-5 text-on-tertiary-container" />
               <div className="text-left">
-                <p className="font-label text-[10px] uppercase tracking-wider text-secondary">Security</p>
-                <p className="text-xs font-semibold text-primary">Vault Protocol Validated</p>
+                <p className="font-label text-[10px] uppercase tracking-wider text-secondary">PROFILE</p>
+                <p className="text-xs font-semibold text-primary">Customer Data Loaded</p>
               </div>
             </div>
             <div className="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/15 flex flex-col items-start gap-3">
               <Database className={`w-5 h-5 text-primary-container ${progress < 80 ? 'animate-pulse' : ''}`} />
               <div className="text-left">
                 <p className="font-label text-[10px] uppercase tracking-wider text-secondary">Data Retrieval</p>
-                <p className="text-xs font-semibold text-primary">{progress < 80 ? 'Indexing Assets...' : 'Assets Indexed'}</p>
+                <p className="text-xs font-semibold text-primary">{progress < 80 ? 'Indexing Assets...' : 'Behavior Patterns Analyzed'}</p>
               </div>
             </div>
             <div className="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/15 flex flex-col items-start gap-3">
               <LineChart className="w-5 h-5 text-secondary" />
               <div className="text-left">
-                <p className="font-label text-[10px] uppercase tracking-wider text-secondary">Analysis</p>
-                <p className="text-xs font-semibold text-primary">{progress < 100 ? 'Queueing Algorithms' : 'Analysis Complete'}</p>
+                <p className="font-label text-[10px] uppercase tracking-wider text-secondary">GENERATION</p>
+                <p className="text-xs font-semibold text-primary">{progress < 100 ? 'Queueing Algorithms' : 'Recommendations Ready'}</p>
               </div>
             </div>
           </div>

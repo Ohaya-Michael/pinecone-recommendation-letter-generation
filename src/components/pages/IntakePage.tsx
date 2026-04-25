@@ -56,9 +56,9 @@ export function IntakePage() {
         animate={{ opacity: 1, y: 0 }}
         className="w-full max-w-3xl mb-12"
       >
-        <span className="font-label text-[11px] uppercase tracking-[0.05em] font-semibold text-on-tertiary-container bg-tertiary-fixed px-3 py-1 rounded-full">Private Wealth Division</span>
-        <h1 className="font-headline text-5xl md:text-6xl font-extrabold tracking-tight text-primary mt-6 mb-4">Sovereign Profile Intake</h1>
-        <p className="text-secondary text-lg max-w-2xl font-light">Input your primary financial vectors for high-precision intelligence modeling. Our Diamond-class engine provides asymmetric insights into your net position.</p>
+        <span className="font-label text-[11px] uppercase tracking-[0.05em] font-semibold text-on-tertiary-container bg-tertiary-fixed px-3 py-1 rounded-full">EMAIL RECOMMENDATION SYSTEM</span>
+        <h1 className="font-headline text-5xl md:text-6xl font-extrabold tracking-tight text-primary mt-6 mb-4">Customer Profile Intake</h1>
+        <p className="text-secondary text-lg max-w-2xl font-light">Enter your customer's details to generate personalized email recommendations tailored to their banking profile using our advanced AI algorithms.</p>
       </motion.div>
 
       {/* Multi-Step Form Container */}
@@ -68,26 +68,26 @@ export function IntakePage() {
           <div className="p-6 bg-surface-container-low rounded-xl">
             <div className="flex items-center gap-3 mb-8">
               <div className="h-2 w-2 rounded-full bg-on-tertiary-container animate-pulse"></div>
-              <span className="font-label text-xs font-bold uppercase tracking-widest text-primary">Intake Progress</span>
+              <span className="font-label text-xs font-bold uppercase tracking-widest text-primary">PROFILE PROGRESS</span>
             </div>
             <nav className="space-y-6">
               <div className="flex items-center gap-4">
                 <span className="flex items-center justify-center h-8 w-8 rounded-md bg-primary text-white text-xs font-bold">01</span>
-                <span className="text-sm font-bold text-primary">Identity & Vitality</span>
+                <span className="text-sm font-bold text-primary">Basic Information</span>
               </div>
               <div className="flex items-center gap-4 opacity-50">
                 <span className="flex items-center justify-center h-8 w-8 rounded-md border border-outline-variant text-xs font-bold">02</span>
-                <span className="text-sm font-medium">Assets & Exposure</span>
+                <span className="text-sm font-medium">Financial Details</span>
               </div>
               <div className="flex items-center gap-4 opacity-50">
                 <span className="flex items-center justify-center h-8 w-8 rounded-md border border-outline-variant text-xs font-bold">03</span>
-                <span className="text-sm font-medium">Affinity & Loyalty</span>
+                <span className="text-sm font-medium">Engagement & History</span>
               </div>
             </nav>
           </div>
           <div className="p-6 glass-card rounded-xl border-l-4 border-on-tertiary-container">
-            <p className="text-xs font-bold text-primary mb-2">INTELLIGENCE TIP</p>
-            <p className="text-xs leading-relaxed text-secondary">Providing precise balance figures increases recommendation accuracy by 24% for Diamond-tier accounts.</p>
+            <p className="text-xs font-bold text-primary mb-2">RECOMMENDATION TIP</p>
+            <p className="text-xs leading-relaxed text-secondary">Completing all fields improves the relevance and accuracy of generated email recommendations.</p>
           </div>
         </div>
 
@@ -102,8 +102,8 @@ export function IntakePage() {
             {/* Section 1: Demographics */}
             <div className="space-y-8">
               <div className="border-b border-outline-variant/15 pb-4">
-                <h2 className="font-headline text-2xl font-bold text-primary">Demographics & Base Metrics</h2>
-                <p className="text-secondary text-sm">Foundational data points for fiscal stratification.</p>
+                <h2 className="font-headline text-2xl font-bold text-primary">Customer Demographics</h2>
+                <p className="text-secondary text-sm">Core customer details used to personalize recommendations.</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                 <div className="space-y-2">
@@ -131,12 +131,12 @@ export function IntakePage() {
             {/* Section 2: Portfolio Depth */}
             <div className="space-y-8">
               <div className="border-b border-outline-variant/15 pb-4">
-                <h2 className="font-headline text-2xl font-bold text-primary">Portfolio Depth</h2>
-                <p className="text-secondary text-sm">Product density and liquidity status.</p>
+                <h2 className="font-headline text-2xl font-bold text-primary">Account & Product Details</h2>
+                <p className="text-secondary text-sm">Customer's current banking products and account status.</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                 <div className="space-y-2">
-                  <label className="font-label text-xs font-bold text-primary uppercase tracking-wider">Total Balance</label>
+                  <label className="font-label text-xs font-bold text-primary uppercase tracking-wider">ACCOUNT BALANCE</label>
                   <input name="Balance" className="w-full bg-surface-container-low border-none rounded-md p-4 text-primary focus:ring-2 focus:ring-primary-container" placeholder="Available Liquidity" type="text" />
                 </div>
                 <div className="space-y-2">
@@ -174,8 +174,8 @@ export function IntakePage() {
                   </button>
                 </div>
                 <div className="space-y-2">
-                  <label className="font-label text-xs font-bold text-primary uppercase tracking-wider">Exited</label>
-                  <input name="Exited" className="w-full bg-surface-container-low border-none rounded-md p-4 text-primary focus:ring-2 focus:ring-primary-container" placeholder="Exited" type="text" />
+                  <label className="font-label text-xs font-bold text-primary uppercase tracking-wider">CHURNED</label>
+                  <input name="Exited" className="w-full bg-surface-container-low border-none rounded-md p-4 text-primary focus:ring-2 focus:ring-primary-container" placeholder="Has Left the Bank" type="text" />
                 </div>
                 <div className="space-y-2">
                   <label className="font-label text-xs font-bold text-primary uppercase tracking-wider">Complain</label>
@@ -220,18 +220,18 @@ export function IntakePage() {
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
         <div className="p-8 bg-surface-container-low rounded-xl border-l-4 border-primary">
           <ShieldCheck className="w-8 h-8 text-primary mb-4" />
-          <h3 className="font-headline font-bold text-primary text-lg mb-2">Vault Security</h3>
-          <p className="text-secondary text-sm">All financial metrics are encrypted using quantum-resistant protocols.</p>
+          <h3 className="font-headline font-bold text-primary text-lg mb-2">Data Privacy</h3>
+          <p className="text-secondary text-sm">Customer data is handled securely and used solely to generate personalized recommendations.</p>
         </div>
         <div className="p-8 bg-surface-container-low rounded-xl border-l-4 border-on-tertiary-container">
           <BarChart3 className="w-8 h-8 text-on-tertiary-container mb-4" />
-          <h3 className="font-headline font-bold text-primary text-lg mb-2">Real-time Analysis</h3>
-          <p className="text-secondary text-sm">Vector analysis begins as you type, preparing your personalized diamond report.</p>
+          <h3 className="font-headline font-bold text-primary text-lg mb-2">Smart Recommendations</h3>
+          <p className="text-secondary text-sm">Profile analysis begins as you type, generating tailored email suggestions in real time.</p>
         </div>
         <div className="p-8 bg-surface-container-low rounded-xl border-l-4 border-tertiary-fixed-dim">
           <Diamond className="w-8 h-8 text-on-tertiary-container mb-4" />
-          <h3 className="font-headline font-bold text-primary text-lg mb-2">Impact Score</h3>
-          <p className="text-secondary text-sm">Discover how your tenure and points influence your sovereign status.</p>
+          <h3 className="font-headline font-bold text-primary text-lg mb-2">Engagement Insights</h3>
+          <p className="text-secondary text-sm">See how customer behavior and history shape the recommended email content.</p>
         </div>
       </div>
     </div>
