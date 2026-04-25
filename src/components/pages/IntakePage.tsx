@@ -35,11 +35,10 @@ export function IntakePage() {
       PointsEarned: formData.get('PointsEarned')?.toString() ?? '',
     };
   
-    console.log('Submitting form with values:', inputValues);
 
     api.post('/api/email_recommendation', inputValues)
       .then((email_response) => {
-        console.log('Form submitted successfully:', email_response.data);
+        //console.log('Form submitted successfully:', email_response.data);
         setIsResult(email_response.data);
         navigate('/processing', { state: { result: email_response.data } });
       })
@@ -47,42 +46,6 @@ export function IntakePage() {
         console.error('Error submitting form:', error);
       });
   };
-
-  const handleSubmit_ = (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-
-  const formData = new FormData(e.currentTarget);
-  const inputValues = {
-    // Convert strings to Numbers for the backend
-    CreditScore: Number(formData.get('CreditScore')),
-    Age: Number(formData.get('Age')),
-    Tenure: Number(formData.get('Tenure')),
-    Balance: Number(formData.get('Balance')),
-    NumOfProducts: Number(formData.get('NumOfProducts')),
-    
-    // Handle Checkboxes (convert "on" to boolean or 1/0)
-    HasCrCard: formData.get('HasCrCard') === 'on', 
-    IsActiveMember: formData.get('IsActiveMember') === 'on',
-    
-    EstimatedSalary: Number(formData.get('EstimatedSalary')),
-    Exited: Number(formData.get('Exited')),
-    Complain: Number(formData.get('Complain')),
-    SatisfactoryScore: Number(formData.get('SatisfactoryScore')),
-    CardType: formData.get('CardType')?.toString() ?? '',
-    PointsEarned: Number(formData.get('PointsEarned')),
-  };
-
-  api.post('/api/email_recommendation/', inputValues)
-    .then((email_response) => {
-      setIsResult(email_response.data);
-      navigate('/processing', { state: { result: email_response.data } });
-    })
-    .catch((error) => {
-      // IMPORTANT: Log the actual validation error from FastAPI
-      console.error('Validation Error:', error.response?.data);
-      console.error('General Error:', error.message);
-    });
-};
 
 
   return (
